@@ -31,9 +31,25 @@ def binary_search(arr, target):
             start_index = middle_index + 1
     return -1  # not found
 
-arr = [1,2,3,4,5,6,7,8,9,10]
+arr = [1, 2, 3, 4, 5, 6]
 target = 3
 
 # Function call
 result = binary_search(arr, target)
 print(f'Element found at index ' + str(result))
+
+
+'''
+
+A linear search scans one item at a time, without jumping to any item .
+
+The worst case complexity is  O(n), sometimes known an O(n) search
+Time taken to search elements keep increasing as the number of elements are increased.
+
+
+A binary search however, cut down your search to half as soon as you find middle of a sorted list.
+
+The middle element is looked to check if it is greater than or less than the value to be searched.
+Accordingly, search is done to either half of the given list
+
+'''
